@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tab0_food_cook_step_steporder_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+    <com.android.volley.toolbox.NetworkImageView 
+        android:id="@+id/tab0_food_cook_step_image_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/tab0_food_cook_step_introuduce_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+        android:text="TextView" />
+
+</LinearLayout>

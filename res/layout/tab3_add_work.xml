@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="添加作品"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/notify" />
+
+        <ImageView
+            android:id="@+id/tab3_add_work_back_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/button_details_gohome" />
+
+    </RelativeLayout>
+    
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp" >
+
+        <AutoCompleteTextView
+            android:id="@+id/tab3_addwork_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="菜名"
+            android:gravity="center"
+            android:background="@drawable/shape5" >
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+
+        <EditText
+            android:id="@+id/tab3_addwork_content_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tab3_addwork_photo_image"
+            android:layout_alignLeft="@+id/tab3_addwork_photo_image"
+            android:ems="10"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="20dp"
+            android:lines="5"
+            android:hint="添加正文"
+            android:background="@drawable/shape6" />
+
+        <TextView
+            android:id="@+id/tab3_addwork_time_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tab3_addwork_name"
+            android:text="2014年7月1日10点00分" />
+
+        <ImageView
+            android:id="@+id/tab3_addwork_photo_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tab3_addwork_time_textview"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/no_pic" />
+
+        <Button
+            android:id="@+id/tab3_addwork_photo_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignBottom="@+id/tab3_addwork_localphoto_button"
+            android:layout_toRightOf="@+id/tab3_addwork_localphoto_button"
+            android:layout_marginLeft="16dp"
+            android:background="#07B498"
+            android:text="拍照"
+            android:textColor="#fff" />
+        <Button
+            android:id="@+id/tab3_addwork_localphoto_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignBottom="@+id/tab3_addwork_photo_image"
+            android:layout_toRightOf="@+id/tab3_addwork_photo_image"
+            android:layout_marginLeft="16dp"
+            android:background="#52c1e5"
+            android:text="添加&#x000A;本地图片"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/tab3_addwork_public_button"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tab3_addwork_content_textview"
+            android:layout_alignLeft="@+id/tab3_addwork_content_textview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="发      布"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:background="#F15A24" />
+
+    </RelativeLayout>
+
+</LinearLayout>

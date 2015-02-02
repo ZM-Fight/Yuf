@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yuf.app.ui"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/normal"
+    android:orientation="vertical"
+    >
+    
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_horizontal|center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购物车"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bk"
+            android:clickable="true"
+            android:onClick="waitForPay"
+             >
+
+            <ImageView
+                android:id="@+id/tab1_addshare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tab2_waitforpay_imageView"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="1dp"
+                android:src="@drawable/daifukuan" />
+
+            <ImageView
+                android:id="@+id/tab2_waitforpay_imageView"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/rightrow" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tab1_addshare"
+                android:layout_marginLeft="3dp"
+                android:text="待 付 款"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bk"
+            android:clickable="true" 
+            android:onClick="passBought"
+            >
+
+            <ImageView
+                android:id="@+id/tab2_bought_ImageView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rightrow" />
+
+            <ImageView
+                android:id="@+id/ImageView03"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/yifukuan" />
+
+            <TextView
+                android:id="@+id/tab3_myfocus_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ImageView03"
+                android:layout_marginLeft="8dp"
+                android:text="已经购买"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bk"
+            android:clickable="true"
+            android:onClick="cookRemind"
+             >
+
+            <ImageView
+                android:id="@+id/tab2_remind_ImageView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/rightrow" />
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/jishi" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ImageView01"
+                android:layout_marginLeft="8dp"
+                android:text="煮菜提醒               "
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

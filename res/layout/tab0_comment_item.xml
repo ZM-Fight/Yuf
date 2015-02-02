@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical" >
+
+    <!-- <com.android.volley.toolbox.NetworkImageView -->
+
+    <ImageView
+        android:id="@+id/tab0_comment_item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tab0_comment_item_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@+id/tab0_comment_item_image"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tab0_comment_item_time_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tab0_comment_item_content_textview"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/tab0_comment_item_name_textview"
+        android:text="TextView"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tab0_comment_item_content_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tab0_comment_item_name_textview"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tab0_comment_item_name_textview"
+        android:layout_marginTop="15dp"
+        android:background="#fff"
+        android:lines="4"
+        android:text="TextView" />
+
+</RelativeLayout>

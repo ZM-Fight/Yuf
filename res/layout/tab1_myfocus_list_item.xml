@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp" >
+
+    <TextView
+        android:id="@+id/myfocus_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/myfocus_head_img"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@+id/myfocus_head_img"
+        android:layout_weight="1"
+        android:text="名字"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/myfocus_right_row"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/rightrow" />
+
+    <com.android.volley.toolbox.NetworkImageView 
+        android:id="@+id/myfocus_head_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_launcher" />
+
+
+    <TextView
+        android:id="@+id/myfocus_account_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/myfocus_head_img"
+        android:layout_alignLeft="@+id/myfocus_name_text"
+        android:layout_marginBottom="2dp"
+        android:text="账号XXXXXXXX" />
+
+</RelativeLayout>

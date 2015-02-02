@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="收货地址"
+			android:textColor="#fff"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/tab2_address_edit_back_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/button_details_gohome" />
+
+     
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/RelativeLayout01"
+        android:padding="10dp"
+        android:layout_marginTop="30dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系人："
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+            <requestFocus />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号码："
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所在城市：" 
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPostalAddress"
+                android:textColor="@color/default_circle_indicator_stroke_color" >
+
+                
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="详细地址："
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textMultiLine" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/tab2_address_ok_button"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/tableLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#F15A24"
+        android:text="确定"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/tab1_share_list_item_headimg"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tab1_share_list_item_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tab1_share_list_item_headimg"
+        android:layout_toRightOf="@+id/tab1_share_list_item_headimg"
+        android:layout_weight="1"
+        android:text="名字"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tab1_share_list_item_name_textview"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tab1_share_list_item_name_textview"
+        android:text="分享了一道菜" />
+
+    <TextView
+        android:id="@+id/tab1_share_item_titile_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tab1_share_list_item_name_textview"
+        android:layout_below="@+id/tab1_share_list_item_name_textview"
+        android:layout_marginTop="5dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tab1_share_list_item_content_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tab1_share_list_item_foodimage"
+        android:layout_below="@+id/tab1_share_list_item_headimg"
+        android:text="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        android:textColor="#707070"
+        android:textSize="13dip" />
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/tab1_share_list_item_foodimage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/tab1_share_list_item_time_textview"
+        android:layout_below="@+id/tab1_share_list_item_content_textview"
+        android:src="@drawable/meat" />
+
+    <TextView
+        android:id="@+id/tab1_share_list_item_time_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tab1_share_item_titile_textview"
+        android:layout_below="@+id/tab1_share_list_item_foodimage"
+        android:text="2014年05月20日" />
+
+    <ImageView
+        android:id="@+id/tab1_share_list_item_more"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/tab1_share_list_item_time_textview"
+        android:layout_alignParentRight="true"
+        android:src="#000" />
+
+    <TextView
+        android:id="@+id/tab1_share_list_item_like_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tab1_share_list_item_foodimage"
+        android:layout_below="@+id/tab1_share_list_item_time_textview" />
+
+    <LinearLayout
+        android:id="@+id/tab1_share_list_item_comment_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tab1_share_list_item_like_textview"
+        android:layout_toRightOf="@+id/tab1_share_list_item_headimg"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+</RelativeLayout>

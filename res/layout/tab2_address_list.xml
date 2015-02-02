@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical"
+         >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="收货地址"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/tab2_address_back_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/button_details_gohome" />
+
+        <ImageView
+            android:id="@+id/tab2_address_list_add_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/add" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:background="@drawable/shape6"
+        android:layout_margin="10dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/tab2_address_list_zone_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="区域"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tab2_address_list_detail_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tab2_address_list_zone_textview"
+            android:text="详细地址"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tab2_address_list_receivername_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tab2_address_list_detail_textview"
+            android:text="收货人"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tab2_address_list_phone_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tab2_address_list_receivername_textview"
+            android:text="电话："
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/tab2_address_list_ok_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="确定"
+            android:background="#07B498"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/tab2_address_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:divider="#ccc"
+        android:dividerHeight="0.8dp"
+        android:background="#f6f4f1" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/cook_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fadingEdgeLength="0dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/scrolllinelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="1dp" >
+
+                <TextView
+                    android:id="@+id/tab0_cookfood_time_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="&lt;1小时"
+                    android:textColor="#4b2c08"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tab0_cookfood_time_textview"
+                    android:layout_alignBottom="@+id/tab0_cookfood_time_textview"
+                    android:layout_toLeftOf="@+id/tab0_cookfood_time_textview"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="烹饪时间："
+                    android:textColor="#af885b"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView5"
+                    android:layout_alignBottom="@+id/textView5"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="工       艺："
+                    android:textColor="#af885b"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tab0_cookfood_skill_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView4"
+                    android:layout_alignBottom="@+id/textView4"
+                    android:layout_toRightOf="@+id/textView4"
+                    android:layout_weight="1"
+                    android:text="炖"
+                    android:textColor="#4b2c08"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/detail_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="18dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="难       度："
+                    android:textColor="#af885b"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tab0_cookfood__dishdifficulty_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/detail_time"
+                    android:layout_alignBottom="@+id/detail_time"
+                    android:layout_alignLeft="@+id/tab0_cookfood_skill_textview"
+                    android:layout_weight="1"
+                    android:text="五星"
+                    android:textColor="#4b2c08"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tab0_cookfood_dose_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tab0_cookfood__dishdifficulty_textview"
+                    android:layout_alignBottom="@+id/tab0_cookfood__dishdifficulty_textview"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="两人份"
+                    android:textColor="#4b2c08"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tab0_cookfood_dose_textview"
+                    android:layout_alignBottom="@+id/tab0_cookfood_dose_textview"
+                    android:layout_alignLeft="@+id/textView5"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="份       量："
+                    android:textColor="#af885b"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp" >
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/tab0_cookfood_foodimage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="220dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/tab0_food_cook_step_steporder_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="#e9e8e8"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="制作步骤"
+                    android:textColor="#2f2c2c" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/add_cart_textview"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/say2"
+        android:gravity="center"
+        android:text="加入\n购物车"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/collection_textView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/add_cart_textview"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/say"
+        android:gravity="center"
+        android:text="收藏"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/share_TextView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/collection_textView"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/say"
+        android:gravity="center"
+        android:text="分享"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/comment_textView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/collection_textView"
+        android:background="@drawable/say"
+        android:gravity="center"
+        android:text="评论"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/show_comment_textView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/share_TextView"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/say"
+        android:gravity="center"
+        android:text="查看\n评论"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+</RelativeLayout>

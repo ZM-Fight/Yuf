@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainIcon"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/normal"
+    android:orientation="vertical" >
+    
+    
+   
+   
+    <LinearLayout
+            android:id="@+id/main_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/bottom_bar"
+            android:layout_alignParentBottom="true"
+            android:baselineAligned="false"
+            android:paddingBottom="2dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:contentDescription="@string/description"
+                    android:id="@+id/img_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:scaleType="matrix"
+                    android:src="@drawable/tab_0_pressed" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:contentDescription="@string/description"
+                    android:id="@+id/img_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:scaleType="matrix"
+                    android:src="@drawable/tab_1_normal"  />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:contentDescription="@string/description"
+                    android:id="@+id/img_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:scaleType="matrix"
+                    android:src="@drawable/tab_2_normal" />
+            </LinearLayout>     
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:contentDescription="@string/description"
+                    android:id="@+id/img_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:scaleType="matrix"
+                    android:src="@drawable/tab_3_normal" />
+            </LinearLayout>     
+        </LinearLayout>
+
+        <com.yuf.app.mywidget.OutsideViewPager
+            android:id="@+id/tabpager"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/main_bottom"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+        </com.yuf.app.mywidget.OutsideViewPager>
+
+    </RelativeLayout>
+	

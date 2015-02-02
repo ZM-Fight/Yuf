@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#e3e3e3"
+        android:padding="0px" >
+
+        <TextView
+            android:id="@+id/tab2_address_list_item_delete_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="29dp"
+            android:text="删除"
+            android:drawableLeft="@drawable/del"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/tab2_address_list_item_setdefault_button"
+            android:layout_width="100dp"
+        android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="#383838"
+            android:textColor="#fff"
+        android:textSize="13sp"
+            android:text="设为收货地址" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"  >
+
+        <TextView
+            android:id="@+id/tab2_address_list_item_name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="姓名"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tab2_address_list_item_phone_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="27dp"
+            android:layout_toRightOf="@+id/tab2_address_list_item_name_textview"
+            android:text="手机号码"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tab2_address_list_item_zone_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="区地址"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tab2_address_list_item_detailaddress_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="详细地址"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

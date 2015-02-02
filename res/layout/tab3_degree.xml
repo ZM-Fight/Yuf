@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的勋章"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/notify" />
+
+        <ImageView
+            android:id="@+id/tab3_degree_back_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/button_details_gohome" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="124dp" >
+
+        <ImageView
+            android:id="@+id/tab3_degree_profile"
+            android:layout_width="91dp"
+            android:layout_height="91dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="0.12"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tab3_degree_profile"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@+id/tab3_degree_profile"
+            android:text="我的等级："
+            android:textSize="20sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tab3_degree_levelname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="懒人一个"
+            android:textSize="20sp"
+            android:layout_alignLeft="@+id/textView1"
+            android:textColor="#00a3ef" />
+
+        <ProgressBar
+            android:id="@+id/tab3_degree_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tab3_degree_profile"
+            android:layout_alignLeft="@+id/textView1" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bk">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/medal"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageView4"
+            android:text="我的积分:"
+            android:textSize="20sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tab3_degree_userpoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/textView3"
+            android:text="0"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bk" >
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/medal"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/tab3_myfocus_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ImageView01"
+            android:text="等级折扣："
+            android:textSize="20sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tab3_degree_leveldiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tab3_myfocus_textview"
+            android:text="1"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

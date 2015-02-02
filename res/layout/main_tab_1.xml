@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res/com.yuf.app.ui">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="社区"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/notify" />
+
+        <ImageView
+            android:id="@+id/tab1_addshare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/add" />
+
+    </RelativeLayout>
+
+    <com.yuf.app.ui.indicator.TitlePageIndicator
+        android:id="@+id/tab1_indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#fff"
+        android:textColor="#666"
+        app:selectedColor="#f59c00" />
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tab1_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5f5f5" >
+</android.support.v4.view.ViewPager>
+  
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <drawable name="normal">#eee</drawable>
+    <drawable name="pressed">#99cc66</drawable>
+    <drawable name="menu_bg">#e0000000</drawable>
+    <drawable name="menu_bg_pressed">#696969</drawable>
+    <color name="transparent">#0000</color>
+    <color name="vifrification">#00000000</color>   <!-- 透明 -->  
+</resources>

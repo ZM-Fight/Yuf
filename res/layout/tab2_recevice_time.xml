@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择收货时间"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/tab2_recevice_time_back_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/button_details_gohome" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/notify" />
+    </RelativeLayout>
+
+    <DatePicker
+        android:id="@+id/datePicker1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/RelativeLayout01"
+        android:layout_marginTop="24dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/datePicker1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        android:text="10:30-11:30"
+        android:textColor="@color/default_line_indicator_unselected_color" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="10:30-11:30"
+            android:textColor="@color/default_line_indicator_unselected_color" />
+
+        <RadioButton
+            android:id="@+id/RadioButton01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:30-11:30"
+            android:textColor="@color/default_line_indicator_unselected_color" />
+
+        <RadioButton
+            android:id="@+id/RadioButton02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11:30-12:30"
+            android:textColor="@color/default_line_indicator_unselected_color" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/tab2_receive_time_ok_button"
+        android:layout_width="200dp"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="确        定"
+        android:background="#ffa902"
+        android:textColor="#ffffff"
+         android:layout_height="40dp" />
+
+</RelativeLayout>

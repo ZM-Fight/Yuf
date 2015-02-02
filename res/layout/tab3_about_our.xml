@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="关于yuf"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/notify" />
+
+        <ImageView
+            android:id="@+id/tab3_about_our_backimageview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/button_details_gohome" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="top|left"
+            android:text="我们由衷的希望你能珍惜和朋友相聚的每一刻。俗语说：“民以食为天”。制作家庭菜，看上去很简单，可要做到色、香、味、形俱佳，既能促进食欲，又能增加营养，除了具有相当熟练的烹调操作技能外，还要善于掌握各道工序的操作要领……我们为你精挑细选了各色食谱，愿您买的方便，煮的有乐趣！"
+            android:background="@drawable/shape6" />
+
+        <Button
+            android:id="@+id/tab3_about_our_check_refresh_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="检 查 更 新"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:background="@drawable/shape3" />
+
+    </RelativeLayout>
+
+</LinearLayout>
