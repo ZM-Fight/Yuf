@@ -4,8 +4,5 @@
 ###### *//Yuf是我参与的一个校园创业项目，由于APP推广难度以及其他原因，目前该项目已经终止。*
 ###### *//因为服务器已停，造成部分功能无法正常显示，甚至出现崩溃。我将持续优化该项目，以提升个人Android技术。*
 
-部分截图如下：
-![image](https://github.com/ButBueatiful/dotvim/raw/master/screenshots/vim-screenshot.jpg)
-![image](https://github.com/ButBueatiful/dotvim/raw/master/screenshots/vim-screenshot.jpg)
-![image](https://github.com/ButBueatiful/dotvim/raw/master/screenshots/vim-screenshot.jpg)
+部分截图如下：（待补充）
 ![image](https://github.com/ButBueatiful/dotvim/raw/master/screenshots/vim-screenshot.jpg)
