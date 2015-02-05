@@ -5,4 +5,4 @@
 ###### *//因为服务器已停，造成部分功能无法正常显示，甚至出现崩溃。我将持续优化该项目，以提升个人Android技术。*
 
 部分截图如下：（待补充）
-![image](https://github.com/ZM-Fight/yuf/raw/master/Screenshot/loading.png)
+![image](https://github.com/ZM-Fight/yuf/res/Screenshot/loading.png)
