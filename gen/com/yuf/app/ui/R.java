@@ -1035,6 +1035,24 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int Anim_style=0x7f0b0001;
         public static final int MyDialogStyle=0x7f0b0003;
         public static final int PopupAnimation=0x7f0b0005;
+        /**  搜索键 
+         */
+        public static final int Search=0x7f0b000b;
+        /**  标题栏-add more 
+         */
+        public static final int TitleAddMore=0x7f0b000a;
+        /**  标题栏-返回键 
+         */
+        public static final int TitleBackImage=0x7f0b0007;
+        /**  标题栏 
+         */
+        public static final int TitleBar=0x7f0b0006;
+        /**  标题栏-音量键 
+         */
+        public static final int TitleSoundImage=0x7f0b0009;
+        /**  标题栏-标题 
+         */
+        public static final int TitleText=0x7f0b0008;
         public static final int dialogWindowAnim=0x7f0b0004;
         public static final int h_line=0x7f0b0002;
     }

@@ -9,37 +9,20 @@
 
    <RelativeLayout
         android:id="@+id/title"
-        android:layout_width="fill_parent"
-        android:layout_height="45dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/title_bar"
-        android:gravity="center_vertical" >
+        style="@style/TitleBar" >
 
         <TextView
             android:id="@+id/tab0_detail_foodname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="糖醋排骨"
-            android:textColor="#ffffff"
-            android:textSize="20sp" />
+            style="@style/TitleText"
+            android:text="糖醋排骨"/>
 
         <ImageView
             android:id="@+id/tab0_detail_back_imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/button_details_gohome" />
+            style="@style/TitleBackImage" />
 
         <ImageView
             android:id="@+id/more_imageView"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/notify" />
+            style="@style/TitleSoundImage" />
 
 
     </RelativeLayout>

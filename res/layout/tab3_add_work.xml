@@ -7,34 +7,19 @@
 
     <RelativeLayout
         android:id="@+id/title"
-        android:layout_width="fill_parent"
-        android:layout_height="45dp"
-        android:background="@drawable/title_bar"
-        android:gravity="center_vertical" >
+        style="@style/TitleBar" >
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="添加作品"
-            android:textColor="#ffffff"
-            android:textSize="20sp" />
+            style="@style/TitleText" 
+            android:text="添加作品"/>
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:src="@drawable/notify" />
+            style="@style/TitleSoundImage" />
 
         <ImageView
             android:id="@+id/tab3_add_work_back_imageview"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:src="@drawable/button_details_gohome" />
+            style="@style/TitleBackImage" />
 
     </RelativeLayout>
     

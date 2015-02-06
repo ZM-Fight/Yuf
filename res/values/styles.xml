@@ -36,5 +36,54 @@
         <item name="android:windowExitAnimation">@anim/popup_exit</item>  
     </style> 
 
+       <!-- 标题栏 -->
+       <style name = "TitleBar">
+           <item name="android:layout_width">fill_parent</item>
+           <item name="android:layout_height">40dp</item>
+           <item name="android:layout_alignParentTop">true</item>
+           <item name="android:layout_alignParentLeft">true</item>
+           <item name="android:background">@drawable/title_bar</item>
+       </style>
+       <!-- 标题栏-返回键 -->
+       <style name = "TitleBackImage">
+           <item name="android:layout_width">35dp</item>
+           <item name="android:layout_height">35dp</item>
+           <item name="android:layout_alignParentLeft">true</item>
+           <item name="android:layout_centerVertical">true</item>
+           <item name="android:background">@drawable/button_details_gohome</item>
+       </style>
+       <!-- 标题栏-标题 -->
+       <style name = "TitleText">
+           <item name="android:layout_width">wrap_content</item>
+           <item name="android:layout_height">wrap_content</item>
+           <item name="android:layout_centerInParent">true</item>
+           <item name="android:textColor">#ffffff</item>
+           <item name="android:textSize">20sp</item>
+       </style>
+       <!-- 标题栏-音量键 -->
+       <style name = "TitleSoundImage">
+           <item name="android:layout_width">35dp</item>
+           <item name="android:layout_height">35dp</item>
+           <item name="android:layout_alignParentRight">true</item>
+           <item name="android:layout_centerVertical">true</item>
+           <item name="android:background">@drawable/notify</item>
+       </style>
+       <!-- 标题栏-add more -->
+       <style name = "TitleAddMore">
+           <item name="android:layout_width">35dp</item>
+           <item name="android:layout_height">35dp</item>
+           <item name="android:layout_alignParentRight">true</item>
+           <item name="android:layout_centerVertical">true</item>
+           <item name="android:background">@drawable/add</item>
+       </style>
+       
+       <!-- 搜索键 -->
+       <style name = "Search">
+           <item name="android:layout_width">35dp</item>
+           <item name="android:layout_height">35dp</item>
+           <item name="android:layout_alignParentLeft">true</item>
+           <item name="android:layout_centerVertical">true</item>
+           <item name="android:background">@drawable/button_title_query</item>
+       </style>
 </resources>
 

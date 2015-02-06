@@ -8,35 +8,19 @@
 
     <RelativeLayout
         android:id="@+id/title"
-        android:layout_width="fill_parent"
-        android:layout_height="40dp"
-        android:background="@drawable/title_bar"
-        android:gravity="center_vertical" >
+        style="@style/TitleBar" >
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="@string/tab0_title"
-            android:textColor="#ffffff"
-            android:textSize="20sp" />
+            style="@style/TitleText" 
+            android:text="@string/tab0_title"/>
 
         <ImageView
             android:id="@+id/search_imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toLeftOf="@+id/textView1"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:src="@drawable/button_title_query" />
+            style="@style/Search"/>
 
         <ImageView
             android:id="@+id/imageView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:src="@drawable/notify" />
+            style="@style/TitleSoundImage" />
     </RelativeLayout>
 
     <com.yuf.app.ui.indicator.TitlePageIndicator

@@ -8,35 +8,19 @@
 
     <RelativeLayout
         android:id="@+id/RelativeLayout01"
-        android:layout_width="fill_parent"
-        android:layout_height="45dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/title_bar"
-        android:gravity="center_vertical" >
+        style="@style/TitleBar" >
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="煮菜提醒"
-            android:textColor="#ffffff"
-            android:textSize="20sp" />
+            style="@style/TitleText" 
+            android:text="煮菜提醒"/>
 
         <ImageView
             android:id="@+id/tab2_remind_back_ImageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:src="@drawable/button_details_gohome" />
+            style="@style/TitleBackImage" />
 
         <ImageView
             android:id="@+id/imageView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:src="@drawable/notify" />
+            style="@style/TitleSoundImage" />
     </RelativeLayout>
 
  <RadioGroup

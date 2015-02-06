@@ -64,7 +64,6 @@ private int dishID ;
 		if (isSeeJust) {
 			goPayImageView.setVisibility(View.GONE);
 		}
-		
 		foodnameTextView=(TextView)findViewById(R.id.tab0_detail_foodname);
 		foodnameTextView.setText(getIntent().getExtras().getString("dishname"));
 		
