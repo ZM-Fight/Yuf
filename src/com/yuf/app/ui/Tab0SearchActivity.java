@@ -5,27 +5,21 @@ import java.util.ArrayList;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.yuf.app.db.DatabaseHelper;
-
 import android.app.Activity;
 import android.content.Context;
 import android.database.Cursor;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.view.WindowManager;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.BaseAdapter;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.SearchView.OnQueryTextListener;
 import android.widget.TextView;
+
+import com.yuf.app.db.DatabaseHelper;
 
 public class Tab0SearchActivity extends Activity {
 
@@ -45,17 +39,18 @@ public class Tab0SearchActivity extends Activity {
 	private MyAdapter adapter;
 	private Cursor mCursor;
 	private Context mContext;
-	private ImageView image_back;
 
 	private DatabaseHelper db_dishHelper;
 	private ArrayList<JSONObject> dishs;
+	
+	private TitleView titleView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.tab0_search);
-
+		
 		mContext = Tab0SearchActivity.this;
 		db_dishHelper = new DatabaseHelper(mContext);
 		try {
@@ -67,26 +62,12 @@ public class Tab0SearchActivity extends Activity {
 
 	}
 	
-	
-
-
-	
 	private void initView() throws JSONException {
-		// TODO Auto-generated method stub
-		
-		image_back = (ImageView) findViewById(R.id.tab0_search_back_imageView);
-		image_back.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Tab0SearchActivity.this.finish();
-			}
-		});
-		
-		
-		
 
+		titleView = (TitleView)findViewById(R.id.title);
+		titleView.setTitleText("搜索");
+		titleView.setRightButton(R.drawable.notify);
+		
 		listView = (ListView) findViewById(R.id.tab0_search_listview);
 		adapter = new MyAdapter();
 		listView.setAdapter(adapter);
